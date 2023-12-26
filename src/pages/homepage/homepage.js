@@ -1,5 +1,6 @@
 import React from "react";
 import "./homepage.scss";
+import QuizButton from "../../components/quizButton/quizButton";
 
 function homepage() {
     return (
@@ -14,7 +15,9 @@ function homepage() {
             <div className="subhead">
                 <h2 className="subhead__text">Start the beer finder quiz below</h2>
             </div>
-            <button className="button">Let's find you a beer</button>
+            <button className="button">
+                <QuizButton />
+            </button>
         </section>
     );
 }

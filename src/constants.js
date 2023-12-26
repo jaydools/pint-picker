@@ -1,0 +1,87 @@
+export const jsQuizz = {
+    questions: [
+        {
+            question: "What type of flavours do you like?",
+            choices: ["Citrus", "Sour", "Sweet", "Malty", "Hoppy", "Rich", "I'm not sure"],
+            type: "MCQs",
+        },
+        {
+            question: "What type of beer do you typically migrate towards?",
+            choices: [
+                "Lager",
+                "Ale",
+                "IPA",
+                "Stout",
+                "Blonde",
+                "Porter",
+                "Witbier",
+                "Sour",
+                "I'm not sure",
+            ],
+            type: "MCQs",
+        },
+        {
+            question: "How do you feel about the bitterness in beer?",
+            choices: [
+                "I love high bitterness",
+                "I enjoy low bitterness",
+                "I like a medium amount of bitterness",
+                "I hate bitter beers",
+                "I'm not sure",
+            ],
+            type: "MCQs",
+        },
+        {
+            question: "What alcohol content do you prefer in your beer?",
+            choices: [
+                "Low (Under 4%)",
+                "Moderate (4-6%)",
+                "High (6-8%)",
+                "I prefer lighter beers",
+                "I like strong beers",
+                "It doesn't matter",
+                "I'm not sure",
+            ],
+            type: "MCQs",
+        },
+        {
+            question: "Are there any additional flavour notes you LOVE",
+            choices: [
+                "Fruity",
+                "Earthy",
+                "Smoky",
+                "Coffee",
+                "I like a variety of flavours",
+                "I'm not sure",
+            ],
+            type: "MCQs",
+        },
+        {
+            question: "What about flavour notes you HATE",
+            choices: [
+                "Fruity",
+                "Earthy",
+                "Smoky",
+                "Coffee",
+                "Hoppy",
+                "Malty",
+                "I don't like many flavours",
+                "I'm not sure",
+            ],
+            type: "MCQs",
+        },
+        {
+            question: "Which of these fits your mood most right now",
+            choices: [
+                "Chillin by a fireplace",
+                "Playing a boardgame",
+                "Working out / doing a sport",
+                "Having a lively dinner with friends",
+                "Savoring a moment of solitude",
+                "Looking for an energy boost",
+                "I'm not sure",
+            ],
+            type: "MCQs",
+        },
+    ],
+};
