@@ -1,4 +1,4 @@
-export const jsQuizz = {
+export const beerQuiz = {
     questions: [
         {
             question: "What type of flavours do you like?",

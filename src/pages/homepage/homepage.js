@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Homepage.scss";
-import QuizButton from "../../components/quizButton/quizButton";
+import QuizButton from "../../components/quizButton/QuizButton";
+import { beerQuiz } from "../../constants";
 
 function Homepage() {
     const [showQuiz, setShowQuiz] = useState(false);
@@ -25,7 +26,9 @@ function Homepage() {
                 <button className="button" onClick={handleButtonClick}>
                     Start Quiz
                 </button>
-                {showQuiz && <QuizButton />}
+                {showQuiz && (
+                    <QuizButton questions={beerQuiz.questions} onClose={() => setShowQuiz(false)} />
+                )}
             </div>
         </section>
     );
