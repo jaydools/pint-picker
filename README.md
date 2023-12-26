@@ -27,7 +27,7 @@ cd pint-picker
 
 ### Install the required dependencies:
 
-npm i sass axios react-router
+npm i sass axios react-router-dom
 
 ### Start the development server:
 
