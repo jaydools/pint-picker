@@ -1,21 +1,29 @@
 import React, { useState } from "react";
 import "./QuizButton.scss";
+import FinalPage from "../FinalPage/FinalPage";
 
 function QuizButton({ questions, onClose }) {
     const [currentQuestion, setCurrentQuestion] = useState(0); // state to hold current question
     const [answers, setAnswers] = useState([]); // state to hold the answer selected to pass to ai as prompt
+    const [quizComplete, setQuizComplete] = useState(false);
 
     const { question, choices } = questions[currentQuestion];
 
-    const onAnswerClick = (choice, index) => {
+    const onAnswerClick = (choice) => {
         let newAnswer = [...answers];
         newAnswer[currentQuestion] = choice;
         setAnswers(newAnswer);
 
-        if (currentQuestion < questions.length - 1) {
+        if (currentQuestion === questions.length - 1) {
+            setQuizComplete(true);
+        } else {
             setCurrentQuestion(currentQuestion + 1);
         }
     };
+
+    if (quizComplete) {
+        return <FinalPage answers={answers} />;
+    }
 
     return (
         <div className="overlay">
