@@ -8,4 +8,35 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 4rem;
+}
+
+.title-text {
+    color: $white;
+    @include mobileH1;
+    padding: 1rem;
+}
+
+.body-text {
+    color: $white;
+    @include mobileP1;
+    padding: 1rem;
+}
+
+.subhead {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    border-radius: $buttonRadius;
+
+    &__text {
+        color: $white;
+        @include mobileH2;
+        padding: 1rem;
+    }
+}
+
+.button {
+    @include button;
+    background-color: maroon;
+    margin: 1rem;
 }
