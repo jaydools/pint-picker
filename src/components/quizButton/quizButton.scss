@@ -1,3 +1,15 @@
 @use "../../styles/global" as *;
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
+.quiz-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba($black, 0.7);
+}

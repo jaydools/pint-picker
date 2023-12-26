@@ -2,7 +2,7 @@ import React from "react";
 import "./quizButton.scss";
 
 function quizButton() {
-    return <div>quizButton</div>;
+    return <article className="quiz-container">quizButton</article>;
 }
 
 export default quizButton;
