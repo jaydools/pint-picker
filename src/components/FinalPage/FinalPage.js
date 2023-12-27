@@ -5,11 +5,12 @@ import createPrompt from "../../createPrompt";
 
 function FinalPage({ answers }) {
     const handleSubmit = async () => {
-        const prompt = createPrompt(answers);
+        const userPrompt = createPrompt(answers);
         try {
-            let res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/pintpicker`, {
-                prompt,
+            let res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/getResponse`, {
+                userPrompt: userPrompt,
             });
+            console.log(res.data);
             if (res.status === 204) {
                 window.location.reload();
             }
