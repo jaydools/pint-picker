@@ -7,10 +7,10 @@ const createPrompt = (answers) => {
         Preference on bitterness Level: ${answers[2]}
         How much alcohol content they like: ${answers[3]}
         Specific flavour notes they like: ${answers[4]}
-        Specific flavour notes they disliked: ${answers[5]}
+        Specific flavour notes they hate and never want: ${answers[5]}
         Currently, the user feels that they most relate to being in the mood to be: ${answers[6]}
 
-        Given these preferences, could you suggest 3 beers that align with these characteristics? Additionally, provide a brief explanation of why each beer might be a good fit. Thank you!
+        Given these preferences, could you suggest 3 beers that align with these characteristics? Additionally, provide a brief explanation of why each beer might be a good fit and include 2 subcategories (briefly at the end in parentheses) of each to help narrow selection (eg new england, belgium, american style, etc ). Thank you!
     `;
 };
 

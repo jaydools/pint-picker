@@ -3,9 +3,15 @@
 @use "../../styles/variables" as *;
 
 .response-box {
-    background-color: white;
+    background-color: $white;
+    margin: 2rem;
     padding: 2rem;
     z-index: 101;
-    height: 100%;
+    height: 90%;
     overflow: auto;
+    border-radius: $buttonRadius;
+
+    &__header {
+        padding: 1rem 0;
+    }
 }

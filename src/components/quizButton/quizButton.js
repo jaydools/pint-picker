@@ -22,7 +22,7 @@ function QuizButton({ questions, onClose }) {
     };
 
     if (quizComplete) {
-        return <FinalPage answers={answers} />;
+        return <FinalPage answers={answers} onClose={onClose} />;
     }
 
     return (
