@@ -1,0 +1,11 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.response-box {
+    background-color: white;
+    padding: 2rem;
+    z-index: 101;
+    height: 100%;
+    overflow: auto;
+}
