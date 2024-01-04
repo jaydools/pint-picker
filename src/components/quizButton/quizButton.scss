@@ -23,11 +23,13 @@
     border-radius: $buttonRadius;
     background-color: $white;
     padding: 1rem;
-    border: 2px solid black;
+    border: 2px solid $primary;
 
+    background: linear-gradient(126deg, rgba(239, 214, 172, 1) 0%, rgba(193, 180, 162, 1) 100%);
     &__header {
         @include mobileH2;
         padding: 0.5rem 0;
+        color: $primary;
     }
 
     &__list {
@@ -37,8 +39,22 @@
         @include mobileP1;
         padding: 0.25rem;
         margin: 0.5rem;
-        border: 1px solid black;
+        border: 1px solid $primary;
         text-align: center;
+        border-radius: 5px;
+        color: $primary;
+        cursor: pointer;
+
+        &:active {
+            color: $cta;
+            font-weight: 700;
+        }
+
+        &:hover {
+            scale: 1.05;
+            border: 1px solid $cta;
+            color: $cta;
+        }
     }
 }
 
@@ -47,4 +63,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+    color: $primary;
+
+    &__close:hover {
+        text-decoration: underline;
+    }
 }

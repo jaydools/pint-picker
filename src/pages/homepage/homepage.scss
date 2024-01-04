@@ -44,4 +44,8 @@
     background: linear-gradient(90deg, rgba(112, 41, 47, 1) 0%, rgba(117, 65, 65, 1) 100%);
     margin: 1rem;
     width: 50%;
+
+    &:hover {
+        scale: 1.05;
+    }
 }

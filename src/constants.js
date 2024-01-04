@@ -75,7 +75,7 @@ export const beerQuiz = {
             choices: [
                 "Chillin by a fireplace",
                 "Playing a boardgame",
-                "Working out / doing a sport",
+                "Doing an outdoor activity",
                 "Having a lively dinner with friends",
                 "Savoring a moment of solitude",
                 "Looking for an energy boost",
