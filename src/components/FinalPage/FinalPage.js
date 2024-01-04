@@ -3,6 +3,7 @@ import "./FinalPage.scss";
 import axios from "axios";
 import createPrompt from "../../createPrompt";
 import SuccessComponent from "../SuccessComponent/SuccessComponent";
+import Loading from "../Loading/Loading";
 
 function FinalPage({ answers }) {
     const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +33,7 @@ function FinalPage({ answers }) {
 
     return (
         <div className="overlay">
-            {isLoading && <div className="loading-modal">Loading...</div>}
+            {isLoading && <Loading />}
             <div className="quiz-container">
                 <h2>Okay Great!</h2>
                 <p>Hit submit and give me one moment while I find you the best beers</p>
