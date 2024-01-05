@@ -1,0 +1,29 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.response-box {
+    background-color: $white;
+    margin: 2rem;
+    padding: 2rem;
+    z-index: 101;
+    height: 90%;
+    overflow: auto;
+    border-radius: $buttonRadius;
+    background: linear-gradient(126deg, rgba(239, 214, 172, 1) 0%, rgba(124, 92, 92, 1) 100%);
+
+    &__header {
+        padding: 1rem 0;
+        color: $primary;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}

@@ -17,7 +17,9 @@
 @mixin button {
     border-radius: $buttonRadius;
     border: 2px solid $secondary;
-    padding: 0.45rem;
+    padding: 1rem;
+    @include mobileH3;
+    color: $white;
 }
 ////////////////////////////////////////////////// Fonts Mobile ///////////
 // Page header
@@ -36,7 +38,7 @@
 
 // labels, Links & Buttons
 @mixin mobileH3 {
-    font-size: 0.8125rem;
+    font-size: 1rem;
     line-height: 1.125rem;
     font-weight: 600;
 }
