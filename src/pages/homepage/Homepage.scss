@@ -1,0 +1,51 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.background {
+    background-image: url("../../assets/images/background.jpg");
+    height: 100svh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 2rem;
+
+    &__spacer {
+        margin-top: 3rem;
+    }
+}
+
+.title-text {
+    color: $white;
+    @include mobileH1;
+    padding: 1rem;
+}
+
+.body-text {
+    color: $white;
+    @include mobileP1;
+    padding: 1rem;
+}
+
+.subhead {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    border-radius: $buttonRadius;
+
+    &__text {
+        color: $white;
+        @include mobileH2;
+        padding: 1rem;
+    }
+}
+
+.button {
+    @include button;
+    background: linear-gradient(90deg, rgba(112, 41, 47, 1) 0%, rgba(117, 65, 65, 1) 100%);
+    margin: 1rem;
+    width: 50%;
+
+    &:hover {
+        scale: 1.05;
+    }
+}
